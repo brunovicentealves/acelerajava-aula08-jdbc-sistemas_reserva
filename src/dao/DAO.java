@@ -11,4 +11,6 @@ public interface DAO <T> {
     public  void deletar (T domain);
 
     public List<T> listartodos();
+
+    public void  close();
 }

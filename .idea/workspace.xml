@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f627c0c1-22db-4482-b745-f71f4fad410b" name="Default Changelist" comment="" />
+    <list default="true" id="f627c0c1-22db-4482-b745-f71f4fad410b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dao/PaisDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domain/Pais.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/DAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/ModalidadeDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/ModalidadeDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/TipoPasseioDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/TipoPasseioDAO.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +24,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1XJaj3WXsRlJgchpLja374fVTRt" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -23,7 +35,16 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48.jar!/" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -76,22 +97,31 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1580766782299</updated>
+      <workItem from="1580912604760" duration="6355000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="179" key="#Project_Structure" timestamp="1580769382794">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="179" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1580769382794" />
-    <state x="765" y="205" key="#com.intellij.ide.util.MemberChooser" timestamp="1580775144476">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="544" y="116" key="#com.intellij.ide.util.MemberChooser" timestamp="1580922964942">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="544" y="116" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1580922964942" />
     <state x="765" y="205" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1580775144476" />
     <state x="690" y="302" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1580767524760">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="302" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580767524760" />
+    <state x="537" y="259" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1580919236620">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="537" y="259" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1366.728@0.0.1366.728" timestamp="1580919236620" />
     <state x="756" y="406" width="408" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1580767526523">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

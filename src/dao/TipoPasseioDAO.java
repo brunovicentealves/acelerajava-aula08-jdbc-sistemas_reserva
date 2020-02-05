@@ -74,7 +74,7 @@ public class TipoPasseioDAO implements DAO<TipoPasseio> {
 
             ex.printStackTrace();
         } finally {
-            close();
+
         }
 
 
@@ -109,7 +109,8 @@ public class TipoPasseioDAO implements DAO<TipoPasseio> {
         return lista;
     }
 
-    private void close() {
+    @Override
+    public void close() {
         try {
             if (conexao != null) {
                 conexao.close();
@@ -121,4 +122,6 @@ public class TipoPasseioDAO implements DAO<TipoPasseio> {
             ex.printStackTrace();
         }
     }
+
+
 }

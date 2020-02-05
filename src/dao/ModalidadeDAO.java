@@ -11,21 +11,25 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ModalidadeDAO implements DAO<Modalidade>{
+    Connection conexao = null;
+    PreparedStatement statement = null;
     @Override
     public void salvar(Modalidade domain) {
        try {
-           Modalidade modalidade = (Modalidade) domain;
-           Connection conexao = JDBCConnection.getConnection();
+
+           conexao = JDBCConnection.getConnection();
            String sql = "INSERT INTO modalidade(nome) VALUES (?);";
            // String sql = "INSERT INTO modalidade(nome) VALUES ('"+modalidade.getNome_modalidade()+"');";
-           PreparedStatement statement = conexao.prepareStatement(sql);
-           statement.setString(1,modalidade.getNome_modalidade());
+            statement = conexao.prepareStatement(sql);
+           statement.setString(1,domain.getNome_modalidade());
 
            statement.execute();
 
        }catch (SQLException ex){
 
            ex.printStackTrace();
+       }finally {
+           close();
        }
 
     }
@@ -34,10 +38,10 @@ public class ModalidadeDAO implements DAO<Modalidade>{
     public void update(Modalidade domain) {
         try {
 
-            Connection conexao = JDBCConnection.getConnection();
+             conexao = JDBCConnection.getConnection();
             String sql = "UPDATE modalidade SET nome_modalidade=? WHERE id_modalidade =?;";
             // String sql = "INSERT INTO modalidade(nome) VALUES ('"+modalidade.getNome_modalidade()+"');";
-            PreparedStatement statement = conexao.prepareStatement(sql);
+             statement = conexao.prepareStatement(sql);
             statement.setString(1,domain.getNome_modalidade());
             statement.setInt(2,domain.getId_modalidade());
             statement.execute();
@@ -52,10 +56,10 @@ public class ModalidadeDAO implements DAO<Modalidade>{
     public void deletar(Modalidade domain) {
         try {
 
-            Connection conexao = JDBCConnection.getConnection();
+            conexao = JDBCConnection.getConnection();
             String sql = "delete from modalidade where id_modalidade=?";
             // String sql = "INSERT INTO modalidade(nome) VALUES ('"+modalidade.getNome_modalidade()+"');";
-            PreparedStatement statement = conexao.prepareStatement(sql);
+            statement = conexao.prepareStatement(sql);
             statement.setInt(1,domain.getId_modalidade());
             statement.executeQuery();
 
@@ -70,9 +74,9 @@ public class ModalidadeDAO implements DAO<Modalidade>{
         List<Modalidade> lista = new ArrayList<>();
        try {
 
-           Connection conexao = JDBCConnection.getConnection();
+           conexao = JDBCConnection.getConnection();
            String sql = "select * from modalidade";
-           PreparedStatement statement = conexao.prepareStatement(sql);
+            statement = conexao.prepareStatement(sql);
            ResultSet resultSet = statement.executeQuery();
 
            while (resultSet.next()){
@@ -89,5 +93,19 @@ public class ModalidadeDAO implements DAO<Modalidade>{
 
 
         return lista;
+    }
+
+    @Override
+    public void close() {
+        try {
+            if (conexao != null) {
+                conexao.close();
+            }
+            if (statement != null) {
+                statement.close();
+            }
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+        }
     }
 }
