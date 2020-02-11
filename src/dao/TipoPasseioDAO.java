@@ -74,7 +74,7 @@ public class TipoPasseioDAO implements DAO<TipoPasseio> {
 
             ex.printStackTrace();
         } finally {
-
+            close();
         }
 
 

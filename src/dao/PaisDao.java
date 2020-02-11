@@ -63,6 +63,8 @@ public class PaisDao implements DAO<Pais> {
             statement.execute();
         }catch (SQLException ex){
             ex.printStackTrace();
+        }finally {
+            close();
         }
 
     }
@@ -82,12 +84,12 @@ public class PaisDao implements DAO<Pais> {
                 pais.setIdPais(resultSet.getInt("id_pais"));
                 pais.setNomePais(resultSet.getString("nome_pais"));
                 lista.add(pais);
-
-
             }
 
         }catch (SQLException ex){
             ex.printStackTrace();
+        }finally {
+            close();
         }
         return lista;
     }
