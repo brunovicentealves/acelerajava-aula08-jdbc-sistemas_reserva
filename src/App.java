@@ -1,8 +1,7 @@
-package domain;
-
 import conexao.JDBCConnection;
 import dao.ModalidadeDAO;
 import dao.TipoPasseioDAO;
+import domain.TipoPasseio;
 
 public class App {
 

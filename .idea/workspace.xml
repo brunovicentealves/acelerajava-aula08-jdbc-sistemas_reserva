@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f627c0c1-22db-4482-b745-f71f4fad410b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/dao/CidadeDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dao/EstadoDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/Cidade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/Estado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/Guia.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/Reserva.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/Viajante.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dao/GuiaDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dao/ViajanteDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/PaisDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/PaisDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/TipoPasseioDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/TipoPasseioDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,11 +53,11 @@
   </component>
   <component name="RunManager">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="domain.App" />
+      <option name="MAIN_CLASS_NAME" value="App" />
       <module name="sistema_reservas" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="domain.*" />
+          <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -100,7 +94,8 @@
       <option name="presentableId" value="Default" />
       <updated>1580766782299</updated>
       <workItem from="1580912604760" duration="7550000" />
-      <workItem from="1581437597344" duration="5259000" />
+      <workItem from="1581437597344" duration="7109000" />
+      <workItem from="1581612243219" duration="5101000" />
     </task>
     <task id="LOCAL-00001" summary="implementado modificações">
       <created>1580932807727</created>
@@ -109,7 +104,21 @@
       <option name="project" value="LOCAL" />
       <updated>1580932807727</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="implementado modificações em algumas tabelas">
+      <created>1581442911609</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1581442911609</updated>
+    </task>
+    <task id="LOCAL-00003" summary="banco de Dados da Aplicação">
+      <created>1581445609989</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1581445609989</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,17 +126,19 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="implementado modificações" />
-    <option name="LAST_COMMIT_MESSAGE" value="implementado modificações" />
+    <MESSAGE value="implementado modificações em algumas tabelas" />
+    <MESSAGE value="banco de Dados da Aplicação" />
+    <option name="LAST_COMMIT_MESSAGE" value="banco de Dados da Aplicação" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="179" key="#Project_Structure" timestamp="1580769382794">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="179" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1580769382794" />
-    <state x="544" y="116" key="#com.intellij.ide.util.MemberChooser" timestamp="1581441544187">
+    <state x="544" y="116" key="#com.intellij.ide.util.MemberChooser" timestamp="1581616226538">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="544" y="116" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1581441544187" />
+    <state x="544" y="116" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1581616226538" />
     <state x="765" y="205" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1580775144476" />
     <state x="690" y="302" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1580767524760">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -141,10 +152,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="756" y="406" width="408" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1580767526523" />
-    <state x="258" y="0" key="CommitChangelistDialog2" timestamp="1580932801616">
+    <state x="258" y="0" key="CommitChangelistDialog2" timestamp="1581445601002">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="258" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1580932801616" />
+    <state x="258" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1581445601002" />
     <state x="666" y="262" key="FileChooserDialogImpl" timestamp="1580767190355">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -169,13 +180,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="440" y="95" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1580767664158" />
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1580932823850">
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1581445626860">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1580932823850" />
-    <state x="390" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1581437773916">
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1581445626860" />
+    <state x="390" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1581612548407">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="390" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1581437773916" />
+    <state x="390" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1581612548407" />
   </component>
 </project>
